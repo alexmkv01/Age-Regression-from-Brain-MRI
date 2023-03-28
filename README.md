@@ -25,7 +25,7 @@ The features are then fed into six regression methods: linear regression, ridge 
 The pipeline outlined in sections A-1, A-2, and A-3 was recomputed on the 500 element hold-out training set, and then tested on the 100 element hold-out test set with the same hyperparmeters. This resulted in a final mean square error score of 70.84, a mean absolute error of 6.59, and an R-2 score of 0.81.
 
 ## Part B: Age prediction using deep learning
-The second approach was to use a deep learning model to learn the features from the MRI scans directly. We explored different architectures such as VGG-16, InceptionV3, and ResNet50, and compared their performance using two-fold cross-validation on the set of 500 subjects. The final model takes the form of a ResNet50, consisting of 50 convolutional layers distributed over 16 blocks, with ReLU activations. 
+The second approach was to use a deep learning model to learn the features from the MRI scans directly. We explored different architectures such as VGG-16, InceptionV3, and ResNet50, and compared their performance using two-fold cross-validation on the set of 500 subjects. The final model takes the form of a ResNet50, consisting of 50 convolutional layers distributed over 16 blocks, with ReLU activations. This resulted in a final mean square error score of 60.34, a mean absolute error of 6.21, and an R-2 score of 0.84.
 
 ## Results
 Our results showed that the deep learning approach outperformed the brain tissue segmentation approach. We achieved an average age prediction error of 6.21 years using the deep learning approach, compared to 6.59 years using the brain tissue segmentation approach. Our best-performing model was the ResNet50 architecture.
